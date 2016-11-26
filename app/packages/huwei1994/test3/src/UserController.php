@@ -8,10 +8,8 @@ class UserController extends Controller
     public function test()
     {
         $title = '测试哈哈哈哈';
-        $data = (new TestModel())->addItem($title);
-        return view('user.user',[
-            'title'=>$data[0]->title
-        ]);
+        //$data = (new TestModel())->addItem($title);
+        return view('test3::user',compact('title'));
     }
 }
 ?>

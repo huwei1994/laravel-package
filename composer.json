@@ -22,7 +22,8 @@
             "database"
         ],
         "psr-4": {
-            "App\\": "app/"
+            "App\\": "app/",
+            "Huwei1994\\Test3\\": "packages/huwei1994/test3/src/"
         }
     },
     "autoload-dev": {
