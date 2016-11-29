@@ -15,9 +15,8 @@ class CreateBuyerTable extends Migration
         //新建buyer（买家）表
         Schema::create('buyer',function(Blueprint $table){
             $table->engine = 'InnoDB';
-            $table->increments('buyer_id');
-            $table->primary('buyer_id');
-            $table->string('buyer_name',128);
+            $table->increments('buyer_id')->comment('买家编号');
+            $table->string('buyer_name',128)->comment('买家名称');
         });
     }
 

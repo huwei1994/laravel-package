@@ -15,9 +15,8 @@ class CreatePaymentMethodTable extends Migration
         //新建payment_method（支付方式）表
         Schema::create('payment_method',function(Blueprint $table){
             $table->engine = 'InnoDB';
-            $table->increments('payment_method_id');
-            $table->primary('payment_method_id');
-            $table->string('payment_method_name',128);
+            $table->increments('payment_method_id')->comment('支付方式编号');
+            $table->string('payment_method_name',128)->comment('支付方式名称');
         });
     }
 

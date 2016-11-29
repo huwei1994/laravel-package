@@ -15,9 +15,8 @@ class CreateSalerTable extends Migration
         //新建saler（卖家信息）表
         Schema::create('saler',function(Blueprint $table){
             $table->engine = 'InnoDB';
-            $table->increments('saler_id');
-            $table->primary('saler_id');
-            $table->string('saler_name',128);
+            $table->increments('saler_id')->comment('卖家编号');
+            $table->string('saler_name',128)->comment('卖家名称');
         });
     }
 
