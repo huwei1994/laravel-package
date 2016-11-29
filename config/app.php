@@ -147,7 +147,6 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
-        Huwei1994\Test3\TestServiceProvides::class,
 
 
         /*
